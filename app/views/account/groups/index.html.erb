@@ -18,7 +18,7 @@
         <tr>
           <td> # </td>
           <td> <%= link_to(group.title, group_path(group)) %> </td>
-          <td> <%= group.description %> </td>
+          <td> <%= render_group_escription(group) %> </td>
           <td> <%= group.posts.count %> </td>
           <td> <%= group.updated_at %> </td>
         </tr>
