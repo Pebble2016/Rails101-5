@@ -1,0 +1,6 @@
+<%= simple_form_for [@group, @post] do |f| %>
+  <div class="form-group">
+    <%= f.input :content, input_html: { class: "form-control"} %>
+  </div>
+  <%= f.submit "发布", class: "btn btn-primary", data: { disable_with: "发布中..."} %>
+<% end %>
